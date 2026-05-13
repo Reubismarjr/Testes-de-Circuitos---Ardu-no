@@ -1,23 +1,18 @@
 
 
-const int pinoLED = 13;
+const int Led = 13;
  
 
 void setup() {
   
-  pinMode(pinoLED, OUTPUT);
+  pinMode(Led, OUTPUT);
   
   
 }
 
 void loop() {
-
-
-  digitalWrite(pinoLED, HIGH);
-  delay(1000); 
-  digitalWrite(pinoLED, LOW);
-  delay(1000);
-
-
-  
+    digitalWrite(Led, HIGH);
+      delay(1000); 
+        digitalWrite(Led, LOW);
+        delay(1000);
 }
