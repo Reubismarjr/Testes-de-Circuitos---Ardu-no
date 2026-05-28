@@ -15,11 +15,13 @@ void loop() {
 
   if(Estadob == LOW){
     digitalWrite(Ledt, HIGH);
-    Serial.println("PRESSIONADO (Sinal no GND)");
+    delay(500);
+    digitalWrite(Ledt, LOW);
+    Serial.println("Pressionado");
   }
   else{
-    Serial.println("NÃO ESTÁ (Pino vazio ou solto)");
-    digitalWrite(Ledt, LOW);
+    Serial.println("Não pressionado)");
+  
     digitalWrite(Ledt2, HIGH);
     delay(500);
     digitalWrite(Ledt2, LOW);
@@ -28,3 +30,4 @@ void loop() {
   
   delay(100);
 }
+
